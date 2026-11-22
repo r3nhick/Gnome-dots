@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Tahoe-Soft
+Comment=macOS Tahoe-Soft style: GTK 3, GTK 4 / libadwaita and GNOME Shell colours
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Tahoe-Soft
+MetacityTheme=Tahoe-Soft

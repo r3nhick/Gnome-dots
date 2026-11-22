@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.window-title-pro"
+          path="/org/gnome/shell/extensions/window-title-pro/">
+
+    <key name="show-icon" type="b">
+      <default>true</default>
+      <summary>Show icon</summary>
+      <description>Show the focused window's app icon in the panel.</description>
+    </key>
+
+    <key name="show-app" type="b">
+      <default>true</default>
+      <summary>Show app name</summary>
+      <description>Show the focused window's app name in the panel.</description>
+    </key>
+
+    <key name="show-title" type="b">
+      <default>false</default>
+      <summary>Show window title</summary>
+      <description>Show the focused window's title in the panel.</description>
+    </key>
+
+    <key name="colored-icon" type="b">
+      <default>false</default>
+      <summary>Colored icon</summary>
+      <description>Show the app icon in full color instead of monochrome/desaturated.</description>
+    </key>
+
+    <key name="fixed-width" type="b">
+      <default>false</default>
+      <summary>Fixed width</summary>
+      <description>Use a fixed width for the indicator instead of auto-sizing.</description>
+    </key>
+
+    <key name="width" type="i">
+      <default>30</default>
+      <summary>Indicator width</summary>
+      <description>Width of the indicator as a percentage of the panel width.</description>
+    </key>
+
+    <key name="icon-size" type="i">
+      <default>16</default>
+      <summary>Icon size</summary>
+      <description>Size of the app icon in pixels.</description>
+    </key>
+
+    <key name="ease-time" type="i">
+      <default>100</default>
+      <summary>Fade in/out time</summary>
+      <description>Duration of the fade in/out animation in milliseconds.</description>
+    </key>
+
+    <key name="panel-position" type="s">
+      <choices>
+        <choice value="left"/>
+        <choice value="center"/>
+        <choice value="right"/>
+      </choices>
+      <default>'left'</default>
+      <summary>Panel position</summary>
+      <description>Which side of the top panel to place the indicator.</description>
+    </key>
+
+    <key name="panel-offset" type="i">
+      <range min="-20" max="20"/>
+      <default>0</default>
+      <summary>Panel position offset</summary>
+      <description>Fine-tune the exact spot within the chosen side: negative shifts left, positive shifts right. Relative to the workspace pill when anchor-workspaces is on, otherwise relative to the end of the side.</description>
+    </key>
+
+    <key name="anchor-workspaces" type="b">
+      <default>true</default>
+      <summary>Anchor after workspaces</summary>
+      <description>Left position: keep the indicator right after the native workspace pill (and any leading item like Kiwi Menu), before other panel items such as Global Menu buttons.</description>
+    </key>
+
+    <key name="toggle-shortcut" type="as">
+      <default>['&lt;Super&gt;y']</default>
+      <summary>Toggle visibility shortcut</summary>
+      <description>Keyboard shortcut to show/hide the indicator.</description>
+    </key>
+
+    <key name="separator" type="s">
+      <default>' — '</default>
+      <summary>Separator text</summary>
+      <description>Text shown between the app name and window title.</description>
+    </key>
+
+    <key name="font-size" type="i">
+      <default>14</default>
+      <summary>Font size override</summary>
+      <description>Custom font size in pixels (8–32).</description>
+    </key>
+
+    <!-- ── Extra features (off by default) ── -->
+
+    <key name="show-workspace" type="b">
+      <default>false</default>
+      <summary>Show workspace indicator</summary>
+      <description>Show the current workspace number next to the app name.</description>
+    </key>
+
+    <key name="show-window-count" type="b">
+      <default>false</default>
+      <summary>Show window count badge</summary>
+      <description>Show how many windows the focused app has open.</description>
+    </key>
+
+    <key name="per-app-color" type="b">
+      <default>false</default>
+      <summary>Per-app title color</summary>
+      <description>Color the app name based on the application (e.g. red for Spotify, blue for Chrome).</description>
+    </key>
+
+  </schema>
+</schemalist>

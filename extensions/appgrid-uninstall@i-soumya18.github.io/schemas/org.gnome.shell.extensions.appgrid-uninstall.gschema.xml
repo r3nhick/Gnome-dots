@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.appgrid-uninstall"
+          path="/org/gnome/shell/extensions/appgrid-uninstall/">
+
+    <key name="show-confirmation-dialog" type="b">
+      <default>true</default>
+      <summary>Show confirmation dialog before uninstalling</summary>
+      <description>
+        When enabled, a dialog will ask for confirmation before
+        removing any application.
+      </description>
+    </key>
+
+    <key name="show-package-type-in-dialog" type="b">
+      <default>true</default>
+      <summary>Show package type in confirmation dialog</summary>
+    </key>
+
+    <key name="enable-for-flatpak" type="b">
+      <default>true</default>
+      <summary>Enable uninstall option for Flatpak apps</summary>
+    </key>
+
+    <key name="enable-for-snap" type="b">
+      <default>true</default>
+      <summary>Enable uninstall option for Snap apps</summary>
+    </key>
+
+    <key name="enable-for-apt" type="b">
+      <default>true</default>
+      <summary>Enable uninstall option for APT/dpkg apps</summary>
+    </key>
+
+    <key name="enable-for-dnf" type="b">
+      <default>true</default>
+      <summary>Enable uninstall option for DNF/RPM apps</summary>
+    </key>
+
+    <key name="enable-for-zypper" type="b">
+      <default>true</default>
+      <summary>Enable uninstall option for Zypper/RPM apps</summary>
+    </key>
+
+    <key name="enable-for-pacman" type="b">
+      <default>true</default>
+      <summary>Enable uninstall option for Pacman/Arch apps</summary>
+    </key>
+
+    <key name="enable-for-apk" type="b">
+      <default>true</default>
+      <summary>Enable uninstall option for Alpine APK apps</summary>
+    </key>
+
+    <key name="enable-for-xbps" type="b">
+      <default>true</default>
+      <summary>Enable uninstall option for Void XBPS apps</summary>
+    </key>
+
+    <key name="enable-for-eopkg" type="b">
+      <default>true</default>
+      <summary>Enable uninstall option for Solus eopkg apps</summary>
+    </key>
+
+    <key name="enable-for-appimage" type="b">
+      <default>true</default>
+      <summary>Enable uninstall option for AppImage apps</summary>
+    </key>
+
+    <key name="enable-for-webapp" type="b">
+      <default>true</default>
+      <summary>Enable uninstall option for Web Apps / PWAs</summary>
+    </key>
+
+    <key name="enable-for-brew" type="b">
+      <default>true</default>
+      <summary>Enable uninstall option for Homebrew / Linuxbrew apps</summary>
+    </key>
+
+    <key name="enable-for-pipx" type="b">
+      <default>true</default>
+      <summary>Enable uninstall option for Pipx apps</summary>
+    </key>
+
+    <key name="enable-for-nix" type="b">
+      <default>true</default>
+      <summary>Enable uninstall option for Nix package manager apps</summary>
+    </key>
+
+    <key name="enable-for-steam" type="b">
+      <default>true</default>
+      <summary>Enable uninstall option for Steam games</summary>
+    </key>
+
+    <key name="enable-for-custom" type="b">
+      <default>true</default>
+      <summary>Enable uninstall option for custom/manual desktop apps</summary>
+    </key>
+
+    <key name="notify-on-success" type="b">
+      <default>true</default>
+      <summary>Show notification on successful uninstall</summary>
+    </key>
+
+    <key name="blocked-apps" type="as">
+      <default>[]</default>
+      <summary>Additional app IDs the user has manually protected</summary>
+    </key>
+
+  </schema>
+</schemalist>

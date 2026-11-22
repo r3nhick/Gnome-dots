@@ -1,0 +1,125 @@
+/* Tahoe-Soft — GNOME Shell. Only colours and the dialog/popup look are changed, the rest is the stock GNOME Shell theme.
+   Popups and dialogs use #222226 (stock: #36363a); dialogs are styled like MacTahoe
+   (https://github.com/vinceliuice/MacTahoe-gtk-theme). The accent (default button, toggles) follows the system accent. */
+
+.popup-menu-content {
+  background-color: #222226;
+}
+
+/* ---- Modal dialogs (Log Out, Restart, Power Off, ...) ---- */
+.modal-dialog, .candidate-popup-content {
+  background-color: #222226;
+  border-radius: 40px;
+  border: solid rgba(0, 0, 0, 0.75);
+  border-width: 1px;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.modal-dialog {
+  color: #dedede;
+  padding: 12px;
+}
+
+.modal-dialog .modal-dialog-content-box {
+  padding: 16px 32px 6px;
+  spacing: 12px;
+  max-width: 28em;
+}
+
+.modal-dialog .modal-dialog-button-box {
+  padding-top: 4px;
+  spacing: 4px;
+}
+
+.modal-dialog .modal-dialog-button,
+.modal-dialog .modal-dialog-linked-button {
+  min-height: 48px;
+  padding: 0 8px;
+  margin: 0;
+  border: none !important;
+  border-radius: 24px;
+  font-weight: bold;
+  color: #dedede;
+  background-color: #38383d;
+  text-shadow: none;
+  icon-shadow: none;
+}
+
+.modal-dialog .modal-dialog-button:hover,
+.modal-dialog .modal-dialog-linked-button:hover {
+  color: #dedede;
+  background-color: st-mix(#dedede, #38383d, 6%);
+}
+
+.modal-dialog .modal-dialog-button:active,
+.modal-dialog .modal-dialog-linked-button:active {
+  color: #dedede;
+  background-color: st-mix(#dedede, #38383d, 12%);
+}
+
+.modal-dialog .modal-dialog-button:checked,
+.modal-dialog .modal-dialog-linked-button:checked {
+  color: #ffffff;
+  background-color: -st-accent-color;
+}
+
+.modal-dialog .modal-dialog-button:insensitive,
+.modal-dialog .modal-dialog-linked-button:insensitive {
+  color: rgba(222, 222, 222, 0.35);
+  background-color: #38383d;
+}
+
+.modal-dialog .modal-dialog-button:focus,
+.modal-dialog .modal-dialog-linked-button:focus {
+  color: #dedede;
+  box-shadow: none !important;
+}
+
+/* the default action (the last button: "Log Out", "Restart", ...) is filled with the accent colour */
+.modal-dialog .modal-dialog-button:last-child,
+.modal-dialog .modal-dialog-linked-button:last-child {
+  color: white !important;
+  background-color: -st-accent-color;
+  background-gradient-direction: none !important;
+}
+
+.modal-dialog .modal-dialog-button:hover:last-child,
+.modal-dialog .modal-dialog-linked-button:hover:last-child {
+  color: white !important;
+  background-gradient-direction: none !important;
+  background-color: st-lighten(-st-accent-color, 9%);
+}
+
+.modal-dialog .modal-dialog-button:active:last-child,
+.modal-dialog .modal-dialog-linked-button:active:last-child {
+  color: white !important;
+  background-gradient-direction: none !important;
+  background-color: st-darken(-st-accent-color, 5%);
+}
+
+.end-session-dialog {
+  width: 28em;
+}
+
+.end-session-dialog .end-session-dialog-battery-warning,
+.end-session-dialog .dialog-list-title {
+  color: #E9873A;
+}
+
+.message-dialog-content {
+  spacing: 18px;
+}
+
+.message-dialog-content .message-dialog-title,
+.message-dialog-content .message-dialog-description,
+.dialog-list .dialog-list-title {
+  text-align: center;
+}
+
+.dialog-list {
+  spacing: 18px;
+}
+
+.dialog-list .dialog-list-scrollview {
+  max-height: 200px;
+}
