@@ -9,7 +9,7 @@ My GNOME 51 setup on Arch Linux — dark, macOS‑Tahoe style, with snow ❄️
 | | |
 |---|---|
 | **GTK / Shell theme** | `Tahoe-Soft` (dark, `prefer-dark`) → [`themes/`](themes) |
-| **Icons** | `Tahoe-BlueGray` (inherits `Tahoe-Default` → `MacTahoe-dark`) → [`icons/`](icons) |
+| **Icons** | [Tahoe icons](https://github.com/r3nhick/tahoe-icons) — `Tahoe-BlueGray` (inherits `Tahoe-Default` → `MacTahoe-dark`) → [`icons/`](icons) |
 | **Cursors** | `Remus-White` → [`cursors/`](cursors) |
 | **Wallpapers** | [`wallpapers/`](wallpapers) |
 | **Window buttons** | left: `close, minimize, maximize` |
@@ -19,6 +19,7 @@ My GNOME 51 setup on Arch Linux — dark, macOS‑Tahoe style, with snow ❄️
 
 - ❄️ **[Snowcast](https://github.com/r3nhick/snowcast)** — snow falling over the desktop and piling up on windows
 - 🧩 **[Desktop Widgets](https://github.com/r3nhick/desktop-widgets)** — GitHub contributions, weather, music player and other widgets on the desktop
+- 🎨 **[Tahoe icons](https://github.com/r3nhick/tahoe-icons)** — the icon theme used here (`Tahoe-BlueGray`)
 
 ## Other extensions
 
@@ -73,7 +74,9 @@ Tools needed: `git`, `dconf`, `xz`, `python3`, `glib-compile-schemas`.
 
 ### Icons only
 
-The icon theme is big, so it is split into parts:
+Repo: **[r3nhick/tahoe-icons](https://github.com/r3nhick/tahoe-icons)**
+
+A copy is also bundled here, split into parts because it is big:
 
 ```bash
 cat icons/Tahoe-icons.tar.xz.part* | tar -xJf - -C ~/.icons
